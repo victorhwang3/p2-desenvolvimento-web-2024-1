@@ -8,11 +8,12 @@ Reproduzir o comportamento da [página de exemplo](#página-de-exemplo).
 1. É preciso usar armazenamento local para viabilizar a solução de autorização
 1. A listagem de atletas e a página de detalhes só devem ser acessíveis a usuários autorizados :eyes:
 1. A senha deve estar disponível na página de entrada (é só uma demonstração) :relieved:
-1. A comparação entre as senhas deve usar um HASH md5 calculado pela biblioteca [md5](https://pajhome.org.uk/crypt/md5/)
+1. A comparação entre as senhas deve usar um HASH sha256 calculado pela biblioteca do [Paj] (https://www.pajhome.org.uk/crypt/md5/scripts.html)
 1. A página principal deve obter os elencos com chamadas, *obrigatoriamente* 👮, aos end-points: 
    1. `https://botafogo-atletas.mange.li/all`
    1. `https://botafogo-atletas.mange.li/masculino`
    1. `https://botafogo-atletas.mange.li/feminino`
+1. Sua página deve permitir filtrar a lista de atletas :raised_eyebrow:
 1. Os dados da página de detalhes devem ser obtidos do end-point `https://botafogo-atletas.mange.li/{atleta-id}`
 1. A página de detalhes deve ser construída com a informação do *id* contida na URL
 1. Não deve ser possível acessar a página de detalhes sem autorização 🛑
@@ -34,4 +35,4 @@ Reproduzir o comportamento da [página de exemplo](#página-de-exemplo).
       - select até 768px;
       - botões para _viewports_ maiores que 768px;
 ## Página de exemplo:
-  Sua solução deve estar **publicada no githubPages** e emular o compartamento da página: https://p2-2023-2-desweb.mange.li/
+  Sua solução deve estar **publicada no githubPages** e emular o compartamento da página: https://p2-2024-1-desweb.mange.li/
